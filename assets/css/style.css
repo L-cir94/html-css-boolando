@@ -6,8 +6,12 @@ box-sizing: border-box;
 :root{
 /* come si mettono?*/
 }
-.main-menu{
+header{
     position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.main-menu{
     width: 100%;
     color: white;
     height: 40px;
@@ -27,7 +31,8 @@ header .container{
     background-color:#ff6900;
 }
 .col{
-    width: calc( 100% / 12 * 3);   
+    width: calc( 100% / 12 * 3); 
+      
 }
 .genere{
     display: flex;
@@ -49,5 +54,38 @@ a{
     text-decoration: none;
 }
 main{
-    height: 800px;
+    height: 800px;/*togli qui*/
+    z-index: 1;
+    
+}
+.card{
+    width: 33%;
+    padding: 20px;
+    position: relative;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top: 100px;
+    flex-wrap: wrap;
+    border: dashed;;
+}
+img{
+width: 100%;
+}
+.bage{
+    position: absolute;
+    bottom: 45px;
+    background-color:#ff0000;
+    padding: 10px;
+    color: white;
+}
+.sostenibilità{
+    position: absolute;
+    bottom: 45px;
+    right: 170px;
+    background-color:#017f01;
+    padding: 10px;
+    color: white;
 }
